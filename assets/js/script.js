@@ -29,7 +29,7 @@ let changeState = function (state) {
       } else {
         cantwaitTxtElement.className = "txt-2";
       }
-
+  
       if (countdownNumber <= 0) {
         changeState(3);
       }
@@ -56,4 +56,4 @@ function setTheme(theme) {
   document.documentElement.style.setProperty("--primary-color", theme);
   localStorage.setItem("movie-theme", theme);
 }
-setTheme(localStorage.getItem("movie-theme") || chathams_blue);
+setTheme(localStorage.getItem("movie-theme") || chathams_blue); 
